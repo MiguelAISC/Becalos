@@ -1,0 +1,67 @@
+
+
+
+  /* Asegura que la imagen ocupe toda la altura de la ventana */
+.full-height {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Hace que el navbar sea fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 70%;
+    z-index: 9999; /* Asegura que el navbar esté por encima de otros elementos */
+    margin: 0 auto;
+    color: white;
+    background-color: black; /* Fondo semitransparente */
+}
+
+/* Estilo del contenedor principal */
+.content-container {
+    display: flex;
+}
+
+.content-container2{
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+/* Alinea el texto a la derecha */
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbdbdb;
+    flex-grow: 1;
+}
+
+/* Color gris para los items no seleccionados */
+.navbar-nav .nav-link {
+    color: gray;
+}
+
+/* Color blanco para el item seleccionado */
+.navbar-nav .nav-link.active {
+    color: white;
+}
+/* Keyframe para el desvanecimiento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Inicia invisible */
+    }
+    100% {
+        opacity: 2; /* Termina completamente visible */
+    }
+}
+
+/* Aplicar la animación a la imagen */
+.img-fluid {
+    animation: fadeIn 2s ease-in-out; /* Duración de 2 segundos, tipo de transición 'ease-in-out' */
+}
+
