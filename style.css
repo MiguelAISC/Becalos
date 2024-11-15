@@ -1,127 +1,209 @@
-
-
 @font-face {
-    font-family: 'MiFuente';
-    src: url('Montserrat-ExtraBold.ttf') format('truetype');
-    /* Si tienes otros formatos de archivo, agrega líneas src adicionales */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "MiFuente";
+  src: url("Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-  /* Asegura que la imagen ocupe toda la altura de la ventana */
 .full-height {
-    height: 100vh;
-    object-fit: cover;
-    width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
 }
 
-/* Hace que el navbar sea fijo */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 10%;
-    width: 70%;
-    z-index: 9999; /* Asegura que el navbar esté por encima de otros elementos */
-    margin: 0 auto;
-    color: white;
-    background-color: black; /* Fondo semitransparente */
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 70%;
+  z-index: 9999; 
+  margin: 0 auto;
+  color: white;
+  background-color: black;
 }
 
-/* Estilo del contenedor principal */
+
 .content-container {
-    display: flex;
+  display: flex;
 }
 
 .content-container2 {
-    background-color: white;
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    padding: 20px; /* Agrega espacio alrededor de las tarjetas */
+  background-color: white;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 20px; /* Agrega espacio alrededor de las tarjetas */
 }
 
 .row.justify-content-center {
-    max-width: 100%; /* Asegura que las tarjetas no excedan el ancho del contenedor */
+  max-width: 100%; /* Asegura que las tarjetas no excedan el ancho del contenedor */
 }
 
-
-/* Alinea el texto a la derecha */
 .text-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #dbdbdb;
-    flex-grow: 1;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbdbdb;
+  flex-grow: 1;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
 }
 
-.card{
-    border: none !important;
+.card {
+  border: none !important;
 }
 
 .text-content {
-    font-family: 'MiFuente';
-    font-size: 30px;
-    position: relative; /* Permite control de posición dentro del contenedor */
-    width: 100%; /* Mantiene el ancho */
-    max-width: 60%; /* Limita el ancho si es necesario */
+  font-family: "MiFuente";
+  font-size: 30px;
+  position: relative; /* Permite control de posición dentro del contenedor */
+  width: 100%; /* Mantiene el ancho */
+  max-width: 60%; /* Limita el ancho si es necesario */
 }
 
-
 .erase {
-    animation: eraseText 2s steps(20) forwards;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
+  animation: eraseText 2s steps(20) forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
 }
 
 @keyframes eraseText {
-    from { width: 100%; }
-    to { width: 0; }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
 .new-text {
-    animation: typing 2s steps(24) forwards; /* Ajusta steps al número de caracteres */
-    overflow: hidden;
-    white-space: nowrap;
+  animation: typing 2s steps(24) forwards; /* Ajusta steps al número de caracteres */
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-
-/* Color gris para los items no seleccionados */
 .navbar-nav .nav-link {
-    color: gray;
+  color: gray;
 }
 
-/* Color blanco para el item seleccionado */
 .navbar-nav .nav-link.active {
-    color: white;
+  color: white;
 }
-/* Keyframe para el desvanecimiento */
 @keyframes fadeIn {
-    0% {
-        opacity: 0; /* Inicia invisible */
-    }
-    100% {
-        opacity: 2; /* Termina completamente visible */
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
 }
 
-/* Aplicar la animación a la imagen */
 .img-fluid {
-    animation: fadeIn 2s ease-in-out; /* Duración de 2 segundos, tipo de transición 'ease-in-out' */
+  animation: fadeIn 2s ease-in-out;
 }
 
-.card-text{
-    font-family: 'MiFuente';
-    font-size: 30px;
+.card-text {
+  font-family: "MiFuente";
+  font-size: 30px;
 }
 
-.card-title{
+.card-title {
+  font-family: "MiFuente";
+  font-size: 40px;
+}
+
+.textoDev {
+  display: none;
+}
+
+.imgPIIA {
+  width: 600px;
+}
+
+.imgANUIES {
+  width: 800px;
+  margin-top: 80px;
+}
+
+.imgFree {
+  width: 250px;
+  margin-top: 80px;
+}
+
+.footer {
+  background-color: #dbdbdb !important;
+}
+
+.txtFooter {
+  font-family: "MiFuente";
+  font-size: 80px;
+  color: black;
+  text-align: center;
+}
+
+.ulFooter {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liFooter {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.imgFooter {
+  width: 50px;
+}
+
+/* Contenedor principal */
+#gustosPersonales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: #dbdbdb;
+}
+
+/* Título */
+.titulo-persona {
+    font-size: 100px;
     font-family: 'MiFuente';
-    font-size: 40px;
+    text-align: center;
+    margin: 0; /* Elimina cualquier margen superior e inferior */
+    padding-bottom: 20px; /* Espacio opcional entre el título y las imágenes */
+}
+
+/* Sección de imágenes */
+section {
+    display: flex;
+    width: 800px;
+    height: 430px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
