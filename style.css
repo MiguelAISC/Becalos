@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'MiFuente';
-    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    src: url('Montserrat-ExtraBold.ttf') format('truetype');
     /* Si tienes otros formatos de archivo, agrega líneas src adicionales */
     font-weight: normal;
     font-style: normal;
