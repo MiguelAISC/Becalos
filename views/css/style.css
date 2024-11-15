@@ -1,5 +1,12 @@
 
 
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    /* Si tienes otros formatos de archivo, agrega líneas src adicionales */
+    font-weight: normal;
+    font-style: normal;
+}
 
   /* Asegura que la imagen ocupe toda la altura de la ventana */
 .full-height {
@@ -25,12 +32,18 @@
     display: flex;
 }
 
-.content-container2{
+.content-container2 {
     background-color: white;
     display: flex;
-    height: 100vh;
-    align-items: center;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor de las tarjetas */
 }
+
+.row.justify-content-center {
+    max-width: 100%; /* Asegura que las tarjetas no excedan el ancho del contenedor */
+}
+
 
 /* Alinea el texto a la derecha */
 .text-container {
@@ -39,7 +52,45 @@
     justify-content: center;
     background-color: #dbdbdb;
     flex-grow: 1;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
 }
+
+.card{
+    border: none !important;
+}
+
+.text-content {
+    font-family: 'MiFuente';
+    font-size: 30px;
+    position: relative; /* Permite control de posición dentro del contenedor */
+    width: 100%; /* Mantiene el ancho */
+    max-width: 60%; /* Limita el ancho si es necesario */
+}
+
+
+.erase {
+    animation: eraseText 2s steps(20) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+@keyframes eraseText {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+.new-text {
+    animation: typing 2s steps(24) forwards; /* Ajusta steps al número de caracteres */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
 
 /* Color gris para los items no seleccionados */
 .navbar-nav .nav-link {
@@ -65,3 +116,12 @@
     animation: fadeIn 2s ease-in-out; /* Duración de 2 segundos, tipo de transición 'ease-in-out' */
 }
 
+.card-text{
+    font-family: 'MiFuente';
+    font-size: 30px;
+}
+
+.card-title{
+    font-family: 'MiFuente';
+    font-size: 40px;
+}
